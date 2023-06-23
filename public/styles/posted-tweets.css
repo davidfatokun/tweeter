@@ -1,0 +1,55 @@
+.posted-tweets {
+  height: 400px;
+  width: 100%;
+}
+
+.tweet {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 80px auto;
+  padding: 2% 2%;
+  border-style: solid;
+}
+
+#tweet-superscript {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#icons {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20;
+  display: flex;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon:hover {
+  color: green;
+}
+
+article p {
+  width: 90%;
+  margin-top: 50px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 30px;
+  display: flex;
+}
+
+
+hr {
+  width: 95%;
+  border: 3px solid black;
+}
+

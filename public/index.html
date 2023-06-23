@@ -7,23 +7,105 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <!-- Bungee Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <!-- Source Sans 3 Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/new-tweets.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/posted-tweets.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <div class="tweetNav">
+        <p><strong>Write</strong> a new tweet</p>
+        <i class="fa-solid fa-angles-down icon" ></i>
+      </div>
+      
     </nav>
 
+    <header id="page-header"class="img">
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>David Fatokun</h2>
+      </div>
+    </header>
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet" >
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets">
+          <label for="tweet-text">What are you humming about?</label>
+      
+          <textarea name="text"
+                    id="tweet-text"
+                    class="form-control"
+                    type="text"
+                    name="text"
+                    id="tweet-text"
+                    placeholder=""
+                    style="margin: 10px">
+          </textarea>
+          
+          <div id="tweet-subscript">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+
+      <article class="posted-tweets">
+        <!-- Your tweet content will come here -->
+
+        <article class="tweet">
+          <header id="tweet-superscript">
+            <span> <img class="avatar" src="/images/profile-hex.png" width="100" height="100"/>Rhoda Jacobs</span>
+            <h3> @MrsJacobs </h3>
+          </header>
+          <p>Hello World !!!</p>
+          <hr></hr>
+          <footer id="icons">
+            <span>10 days ago</span>
+            <div>
+              <a href="#" class="icon"><i name="flag" class="fas fa-flag"></i></a>
+              <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="icon"><i class="fas fa-retweet"></i></a>
+            </div>            
+          </footer>
+        </article>
+      </article>
+    </main>
   </body>
 </html>
