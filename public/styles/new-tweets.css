@@ -56,15 +56,3 @@ form hr {
   justify-content: center;
   align-items: center;
 }
-
-/* .error::before {
-  content: "⚠";
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 50px;
-}
-
-.error::after {
-  content: "⚠";
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 50px;
-} */

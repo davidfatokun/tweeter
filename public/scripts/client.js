@@ -62,12 +62,10 @@ $(document).ready(function () {
   const onSubmit = $("form").on("submit", function (event) {
     event.preventDefault();
     if ($('#tweet-text').val().length === 0) {
-      // alert("Tweet cannot be empty");
       $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i> Tweet cannot be empty <i class='fa-solid fa-triangle-exclamation'></i>");
       $(".error").slideDown();
       $(".error").css('display', 'flex');
     }else if ($('#tweet-text').val().length > 140) {
-      // alert("Tweet is over 140 characters");
       $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i> Too long. Please respect our arbitrary limit of 140 characters <i class='fa-solid fa-triangle-exclamation'></i>");
       $(".error").slideDown();
       $(".error").css('display', 'flex');
