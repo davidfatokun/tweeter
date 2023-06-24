@@ -32,14 +32,58 @@ const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 // Mount the tweets routes at the "/tweets" path prefix:
 app.use("/tweets", tweetsRoutes);
 
+// Fake data taken from initial-tweets.json
+// const tweets = [
+//   {
+//     "user": {
+//       "name": "Newton",
+//       "avatars": "https://i.imgur.com/73hZDYK.png",
+//       "handle": "@SirIsaac"
+//     },
+//     "content": {
+//       "text": "If I have seen further it is by standing on the shoulders of giants"
+//     },
+//     "created_at": 1461116232227
+//   },
+//   {
+//     "user": {
+//       "name": "Descartes",
+//       "avatars": "https://i.imgur.com/nlhLi3I.png",
+//       "handle": "@rd"
+//     },
+//     "content": {
+//       "text": "Je pense , donc je suis"
+//     },
+//     "created_at": 1461113959088
+//   }
+// ]
 
-app.post("/tweets/", (req, res) => {
-  if (req.session["user_id"]) {
-      res.redirect("/urls");
-  } else {
-      res.redirect("/login");
-  }
-});
+// app.get("/tweets", (req, res) => {
+//   res.json(tweets);
+// });
+
+// app.post("/tweets", (req, res) => {
+//   const userName = req.body.name;
+//   const userAvatar = req.body.avatars;
+//   const handle = req.body.handle;
+//   const text = req.body.text;
+//   const date = req.body.created_at;
+//   const newTweet =  {
+//     "user": {
+//       "name": userName,
+//       "avatars": userAvatar,
+//       "handle": handle
+//     },
+//     "content": {
+//       "text": text
+//     },
+//     "created_at": date
+//   };
+//   tweets.push(newTweet);
+
+//   res.status(201).send();
+  
+// });
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
