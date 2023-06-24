@@ -30,7 +30,7 @@ body {
 main {
   background-color: cornsilk;
   color: #545149;
-  height: 2000px;
+  height: auto;
   width: 100%;
   justify-content: center;
   align-items: left;
