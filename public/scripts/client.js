@@ -17,7 +17,7 @@ $(document).ready(function () {
     const text = tweet.content.text;
     const timestamp = timeago.format(tweet.created_at);
 
-  let $tweet = $(`
+    let $tweet = $(`
   <article class="tweet">
     <header id="tweet-superscript">
       <span> <img class="avatar" src="${escape(userAvatar)}" width="100" height="100" />${escape(userName)}</span>
@@ -65,7 +65,7 @@ $(document).ready(function () {
       $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i> Tweet cannot be empty <i class='fa-solid fa-triangle-exclamation'></i>");
       $(".error").slideDown();
       $(".error").css('display', 'flex');
-    }else if ($('#tweet-text').val().length > 140) {
+    } else if ($('#tweet-text').val().length > 140) {
       $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i> Too long. Please respect our arbitrary limit of 140 characters <i class='fa-solid fa-triangle-exclamation'></i>");
       $(".error").slideDown();
       $(".error").css('display', 'flex');
@@ -84,6 +84,8 @@ $(document).ready(function () {
           console.log("this request failed, here is the error", error)
         },
       });
+      $('#tweet-text').val("");
+      $('.counter').text(140);
     }
   });
 });

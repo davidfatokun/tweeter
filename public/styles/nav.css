@@ -24,8 +24,13 @@
     align-items: center;
   }
 
-  .icon {
+  .compose-icon {
     color: orange;
+    margin-top: -20px;
+  }
+
+  .compose-icon:hover {
+    color: green;
     margin-top: -20px;
   }
 
@@ -60,8 +65,13 @@
     align-items: center;
   }
 
-  .icon {
+  .compose-icon {
     color: orange;
+    margin-top: -20px;
+  }
+
+  .compose-icon:hover {
+    color: green;
     margin-top: -20px;
   }
 

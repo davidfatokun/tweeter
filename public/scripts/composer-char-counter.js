@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // 
   $('#tweet-text').on("input", function () {
     var inputLength = $(this).val().length;
     $('.counter').text(function () {

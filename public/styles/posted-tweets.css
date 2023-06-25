@@ -37,6 +37,10 @@
     align-items: center;
   }
 
+  .icon {
+    color: orange;
+  }
+
   .icon:hover {
     color: green;
   }
@@ -94,6 +98,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .icon {
+    color: orange;
   }
 
   .icon:hover {
