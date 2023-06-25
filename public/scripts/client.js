@@ -72,7 +72,7 @@ $(document).ready(function () {
       $(".error").slideDown();
       $(".error").css('display', 'flex');
     } else if ($('#tweet-text').val().length > 140) {
-      $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i> Too long. Please respect our arbitrary limit of 140 characters <i class='fa-solid fa-triangle-exclamation'></i>");
+      $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i>Tweet is more than 140 characters long<i class='fa-solid fa-triangle-exclamation'></i>");
       $(".error").slideDown();
       $(".error").css('display', 'flex');
     } else {
