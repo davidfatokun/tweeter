@@ -4,12 +4,15 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function () {
+
+  // Prevent XSS attacks with escaping
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
+  // Create a new tweet element using given template
   const createTweetElement = function (tweet) {
     const userName = tweet.user.name;
     const userAvatar = tweet.user.avatars;
@@ -39,10 +42,8 @@ $(document).ready(function () {
     return $tweet;
   }
 
+  // Render the given tweets to the posted tweets container
   const renderTweets = function (tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
     $('#posted-tweets').empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
@@ -57,13 +58,13 @@ $(document).ready(function () {
       });
   }
 
-  loadTweets();
-
+  // SLide down the new tweet section on the click of the compose icon
   $(".compose-icon").click(function() {
     $(".new-tweet").slideDown();
     $(".new-tweet").css('display', 'flex');
   });
 
+  // Submit the form using a AJAX POST request and update the page asynchronously
   $("form").on("submit", function (event) {
     event.preventDefault();
     if ($('#tweet-text').val().length === 0) {
@@ -82,7 +83,6 @@ $(document).ready(function () {
         method: "POST",
         data: $(this).serialize(),
         success: (data) => {
-          console.log("this request was a success")
           loadTweets();
         },
         error: (error) => {
@@ -93,4 +93,7 @@ $(document).ready(function () {
       $('.counter').text(140);
     }
   });
+
+  // Load the initial tweets on page load
+  loadTweets();
 });

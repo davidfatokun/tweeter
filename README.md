@@ -16,3 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Final Project
+
+!["Screenshot of desktop view page"](https://github.com/davidfatokun/tweeter/blob/main/docs/desktop-view.png)
+!["Screenshot of mobile view page"](https://github.com/davidfatokun/tweeter/blob/main/docs/mobile-view.png)
