@@ -15,6 +15,10 @@
     margin: 80px auto;
     padding: 2% 2%;
     border-style: solid;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .tweet:hover {
+    box-shadow: 5px 5px 10px #888888;
   }
 
   #tweet-superscript {
@@ -78,6 +82,10 @@
     margin: 80px auto;
     padding: 2% 2%;
     border-style: solid;
+    transition: box-shadow 0.5s ease-in-out;
+  }
+  .tweet:hover {
+    box-shadow: 8px 8px 10px grey;
   }
 
   #tweet-superscript {

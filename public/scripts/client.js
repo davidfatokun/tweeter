@@ -59,7 +59,12 @@ $(document).ready(function () {
 
   loadTweets();
 
-  const onSubmit = $("form").on("submit", function (event) {
+  $(".compose-icon").click(function() {
+    $(".new-tweet").slideDown();
+    $(".new-tweet").css('display', 'flex');
+  });
+
+  $("form").on("submit", function (event) {
     event.preventDefault();
     if ($('#tweet-text').val().length === 0) {
       $(".error").html("<i class='fa-solid fa-triangle-exclamation'></i> Tweet cannot be empty <i class='fa-solid fa-triangle-exclamation'></i>");
