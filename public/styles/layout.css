@@ -84,7 +84,7 @@
     align-items: left;
     position: relative;
     z-index: 0;
-    top: 120px;
+    top: 20vh;
   }
 
   #main-page {
