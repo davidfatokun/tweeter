@@ -30,13 +30,14 @@
     background-color: #cc8800;
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
     color: #FFFFFF;
-    height: 520px;
-    width: 100vw;
+    height: auto;
+    width: 50vw;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-top;
     align-items: center;
     position: relative;
     z-index: 2;
+    top: 120px;
   }
 
   .img {
