@@ -19,5 +19,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Project
 
-!["Screenshot of desktop view page"](https://github.com/davidfatokun/tweeter/blob/main/docs/desktop-view.png)
-!["Screenshot of mobile view page"](https://github.com/davidfatokun/tweeter/blob/main/docs/mobile-view.png)
+!["Screenshot of desktop view page on startup, before clicking compose icon"](https://github.com/davidfatokun/tweeter/blob/master/docs/desktop-startup-view.png)
+!["Screenshot of desktop view page after clicking compose icon"](https://github.com/davidfatokun/tweeter/blob/master/docs/desktop-view.png)
+!["Screenshot of desktop view page with alert"](https://github.com/davidfatokun/tweeter/blob/master/docs/desktop-view-alert.png)
+!["Screenshot of mobile view page after clicking compose icon"](https://github.com/davidfatokun/tweeter/blob/master/docs/mobile-view.png)
+!["Screenshot of mobile view page with alert"](https://github.com/davidfatokun/tweeter/blob/master/docs/mobile-view-alert.png)

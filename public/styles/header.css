@@ -1,11 +1,10 @@
 @media only screen and (max-width: 420px) {
-
   @import url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
 
   #page-header {
     background-color: #cc8800;
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    color: #FFFFFF;
+    color: black;
     height: 520px;
     width: 100vw;
     flex-direction: column;
