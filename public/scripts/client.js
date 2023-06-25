@@ -84,13 +84,14 @@ $(document).ready(function () {
         data: $(this).serialize(),
         success: (data) => {
           loadTweets();
+          $('#tweet-text').val("");
+          $('.counter').text(140);
         },
         error: (error) => {
-          console.log("this request failed, here is the error", error)
+          alert("This request failed, here is the error: " + error.statusText);
         },
       });
-      $('#tweet-text').val("");
-      $('.counter').text(140);
+      
     }
   });
 
