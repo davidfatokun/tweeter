@@ -22,7 +22,7 @@
 
   #tweet-superscript {
     font-family: "Source Sans 3", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -52,7 +52,7 @@
     width: 90%;
     margin-top: 50px;
     font-family: "Source Sans 3", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
